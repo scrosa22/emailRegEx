@@ -1,8 +1,12 @@
 # Matching an Email - Regex Tutorial
 
-Introductory paragraph (replace this with your text)
+The following tutorial is designed to explain the use of Regular Expressions (regex) for matching an email. 
 
 ## Summary
+
+Regular Expressions is a sequence of characters that defines a search pattern. 
+
+ > /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 
 Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
 
@@ -24,26 +28,72 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ### Anchors
 
+ > /**^**([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})**$**/
+
+Anchors start and end the expression. `^` indicates the beginning and `$` indicates the end of the expression.  
+
 ### Quantifiers
 
-### OR Operator
+ > /^([a-z0-9_\.-]**+**)@([\da-z\.-]**+**)\.([a-z\.]**{2,6}**)$/
+
+Quantifiers specify the characters in the regex search, and how many times they are expected to appear. Our sample has two quantifiers, `+` and `{2,6}`.
+The first quantifier `[a-z0-9_\.-]+` indicates any character in the [] is expected to match one or more times. (the same for [\da-z\.-])
+
+##### Example
+
+
+<!-- ### OR Operator
+ > /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/ 
+ not included -->
 
 ### Character Classes
+ > /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+
+ ##### Example
+
+
 
 ### Flags
+ > /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 
 ### Grouping and Capturing
+ > /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+
+ ##### Example
+
+
 
 ### Bracket Expressions
+ > /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+
+ ##### Example
+
+
 
 ### Greedy and Lazy Match
+ > /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 
 ### Boundaries
 
+ > /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+
+ ##### Example
+
+
+
 ### Back-references
+ > /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+
+ ##### Example
+
 
 ### Look-ahead and Look-behind
+ > /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+
+ 
 
 ## Author
 
 A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+
+![This is an image](https://)
