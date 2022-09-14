@@ -27,8 +27,7 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Regex Components
 
 ### Anchors
-`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
-/**^**([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})**$**/
+> /`^`([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})`$`/
 
 Anchors start and end the expression. `^` indicates the beginning and `$` indicates the end of the expression.  
 
