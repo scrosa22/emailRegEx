@@ -6,7 +6,7 @@ The following tutorial is designed to explain the use of Regular Expressions (re
 
 Regular Expressions is a sequence of characters that defines a search pattern. 
 
- > /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+ >> /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 
 Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
 
@@ -32,14 +32,13 @@ Briefly summarize the regex you will be describing and what you will explain. In
 Anchors start and end the expression. `^` indicates the beginning and `$` indicates the end of the expression.  
 
 ### Quantifiers
-`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
- > /^([a-z0-9_\.-]**+**)@([\da-z\.-]**+**)\.([a-z\.]**{2,6}**)$/
+> /^([a-z0-9_\.-]`+`)@([\da-z\.-]`+`)\.([a-z\.]`{2,6})`$/
 
 Quantifiers specify the characters in the regex search, and how many times they are expected to appear. Our sample has two quantifiers, `+` and `{2,6}`.
 The first quantifier `[a-z0-9_\.-]+` indicates any character in the [] is expected to match one or more times. (the same for [\da-z\.-])
 The second quantifier `{2,6}` indicates minimun 2 to maximum 6 characters matching [a-z0-9_\.-] are expected. 
 
-##### Example
+###### Example
 - a* will match every character in "alphabet".
 - a+ will match only the "a" in "alphabet".
 - a? will match every character in "alphabet".
@@ -53,49 +52,49 @@ The second quantifier `{2,6}` indicates minimun 2 to maximum 6 characters matchi
  not included -->
 
 ### Character Classes
-`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+> /^([a-z0-9_`\.`-]+)@([\da-z`\.`-]+)\.([a-z\.]{2,6})$/
 
- ##### Example
+Character classes match types of characters. `\d` is used to match any digit 0-9 character.
 
 
 
 ### Flags
-`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+> /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 
 
 ### Grouping and Capturing
-`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+> /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 
  ##### Example
 
 
 
 ### Bracket Expressions
-`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+> /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 
  ##### Example
 
 
 
 ### Greedy and Lazy Match
-`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+> /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 
 ### Boundaries
 
-`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+> /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 
  ##### Example
 
 
 
 ### Back-references
-`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+> /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 
  ##### Example
 
 
 ### Look-ahead and Look-behind
-`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+> /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 
 
 
