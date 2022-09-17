@@ -21,7 +21,7 @@ Regular Expressions is a sequence of characters that defines a search pattern.
 - [Greedy and Lazy Match](#greedy-and-lazy-match)
 <!-- - [Boundaries](#boundaries) -->
 <!-- - [Back-references](#back-references) -->
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
+<!-- - [Look-ahead and Look-behind](#look-ahead-and-look-behind) -->
 
 ## Regex Components
 
@@ -75,31 +75,31 @@ Flags are placed at the end the regex and define additional functionality or lim
 
 
 ### Grouping and Capturing
-> /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+> /^`([a-z0-9_\.-]+)`@`([\da-z\.-]+)`\.`([a-z\.]{2,6})`$/
 
 Grouping and Capturing is done using parentheses `()` to select search parameters. 
 
  ##### Example
- - ([a-z0-9_\.-]+) - Group for email address.
- - ([\da-z\.-]+) - Group for email provider. 
- - ([a-z\.]{2,6}) - Group for domain extention.
+ - `([a-z0-9_\.-]+)` - Group for email address.
+ - `([\da-z\.-]+)` - Group for email provider. 
+ - `([a-z\.]{2,6})` - Group for domain extention.
  
 
 
 ### Bracket Expressions
-> /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+> /^(`[a-z0-9_\.-]`+)@(`[\da-z\.-]`+)\.(`[a-z\.]`{2,6})$/
 
 Bracket Expressions are used to find a range of characters to match. As a positive character group, anything inside a `[ ]` will be included. 
 
  ##### Example
- - [a-z0-9_\.-] - Matches any lowercase letters, numbers, underscores, periods or dashes.
- - [\da-z\.-] - Matches any single digit, lowercase letters, periods or dashes.
- - [a-z\.] - Matches any lowercase letters and period.
+ - `[a-z0-9_\.-]` - Matches any lowercase letters, numbers, underscores, periods or dashes.
+ - `[\da-z\.-]` - Matches any single digit, lowercase letters, periods or dashes.
+ - `[a-z\.]` - Matches any lowercase letters and period.
 
 ### Greedy and Lazy Match
 > /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 
-The `+` quantifier allows the search to match one or more of the characters in the expression. Quantifiers by default tell the regex to match as many instances of the expression as possible - this is called ***greedy*** and a greedy quantifier will return the longest match (at the start of the search parameter). Conversely, a "Lazy" match will return as few as possible matches and provide the shortest match.
+The `+` quantifier allows the search to match one or more of the characters in the expression. Quantifiers by default tell the regex to match as many instances of the expression as possible - this is called ***greedy*** and a greedy quantifier will return the longest match (at the start of the search parameter). Conversely, a ***Lazy*** match will return as few as possible matches and provide the shortest match.
 
 
 <!-- ### Boundaries -->
@@ -111,9 +111,9 @@ The `+` quantifier allows the search to match one or more of the characters in t
 Backreference in a regular expression identifies a previously matched group and looks for exactly the same text again -->
 
 
-
+<!-- 
 ### Look-ahead and Look-behind
-> /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+> /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/ -->
 
 
 
@@ -121,8 +121,6 @@ Backreference in a regular expression identifies a previously matched group and 
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+This gist was created by S Rosa as a bootcamp completion requirement. Hopefully you have found this gist helpful! 
 
 https://github.com/scrosa22/emailRegEx
-
-![image](https://)
